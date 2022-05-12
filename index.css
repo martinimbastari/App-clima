@@ -1,0 +1,103 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.h1 {
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 35px;
+}
+
+#contenedor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 20px;
+}
+
+
+
+#caja1, #caja2, #caja3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+}
+
+
+#caja1 {
+    background-color: rgba(0, 0, 0, 0.407) ;
+    color: azure;
+    height: 100%;
+}
+
+#caja2 {
+    background-color: rgba(33, 0, 246, 0.503);
+    color: azure;
+    height: 100%;
+}
+
+#caja3 {
+    background-color: #00aef984 ;
+    color: azure;
+    height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        height: 100vh;
+    }
+
+    .h1 {
+        padding: 25px;
+    }
+    
+    #contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+    #caja1, #caja2, #caja3 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    #caja1 h1 {
+        padding: 10px;
+    }
+
+    #caja3 h3 {
+        padding: 10px;
+        font-size: 30px;
+    }
+}
