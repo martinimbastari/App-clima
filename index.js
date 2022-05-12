@@ -15,7 +15,7 @@ window.addEventListener('load', ()=> {
             lat = posicion.coords.latitude
 
             //ubicacion actual
-           const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+           const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${API_KEY}`
 
            //ubicacion por ciudad
         //    const url = `https://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=${API_KEY}`
